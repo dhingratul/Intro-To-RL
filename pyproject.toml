@@ -1,0 +1,16 @@
+[project]
+name = "intro-to-rl"
+version = "0.1.0"
+description = "Introduction to Reinforcement Learning"
+authors = []
+dependencies = [
+    "gymnasium[box2d]>=0.29.1",
+    "numpy>=1.24.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src", "scripts"]
