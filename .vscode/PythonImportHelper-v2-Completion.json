@@ -136,6 +136,15 @@
     {
         "label": "env",
         "kind": 5,
+        "importPath": "scripts.frozen_lake",
+        "description": "scripts.frozen_lake",
+        "peekOfCode": "env = gym.make(\"FrozenLake-v1\", render_mode=\"rgb_array\", map_name=\"4x4\", is_slippery=False)\nprint(f\"Observation space: {env.observation_space}\")\nprint(f\"Action space: {env.action_space}\")\nprint(f\"Observation space sample: {env.observation_space.sample()}\")\nprint(f\"Action space sample: {env.action_space.sample()}\")\nobs, info = env.reset()\nprint(f\"Initial observation: {obs}\")\nprint(f\"Initial info: {info}\")\nfor i in range(10):\n    action = env.action_space.sample()",
+        "detail": "scripts.frozen_lake",
+        "documentation": {}
+    },
+    {
+        "label": "env",
+        "kind": 5,
         "importPath": "scripts.gym",
         "description": "scripts.gym",
         "peekOfCode": "env = gym.make(\"CartPole-v1\")\n# Then we reset this environment\nobservation, info = env.reset()\nfor _ in range(20):\n    # Take a random action\n    action = env.action_space.sample()\n    print(\"Action taken:\", action)\n    # Do this action in the environment and get\n    # next_state, reward, terminated, truncated and info\n    observation, reward, terminated, truncated, info = env.step(action)",
