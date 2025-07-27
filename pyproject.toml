@@ -7,6 +7,7 @@ dependencies = [
     #"gymnasium[box2d]>=0.29.1",
     "gymnasium",
     "numpy>=1.24.0",
+    "rl-zoo3>=2.7.0",
 ]
 
 [build-system]
